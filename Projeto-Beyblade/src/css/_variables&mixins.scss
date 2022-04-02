@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans+Condensed:ital,wght@1,300&display=swap");
+
+$font-primary: "Open Sans Condensed", sans-serif;
+$font-input: "Dancing Script", cursive;
+
+$primary-color: #fcfcfc;
+$secondary-color: #262527;
+$effect-color: #f11035;
+
+@mixin d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

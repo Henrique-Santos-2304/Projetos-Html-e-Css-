@@ -1,0 +1,59 @@
+.header {
+  @include d-flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0;
+
+  .logo {
+    max-width: 300px;
+    padding: 11px 22px;
+    img {
+      border-radius: 16px;
+      box-shadow: 0 0 30px $effect-color;
+      width: 100%;
+    }
+  }
+  .search_box {
+    background: $effect-color;
+    border-radius: 40px;
+    padding: 10px;
+    .search_btn {
+      @include d-flex;
+      color: $secondary-color;
+      float: right;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: $primary-color;
+      transform: all 0.8s ease;
+      img {
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+      }
+    }
+    .search_txt {
+      text-transform: capitalize;
+      text-align: center;
+      font-family: $font-input;
+      background: transparent;
+      outline: none;
+      float: left;
+      font-size: 1.4rem;
+      transition: 0.4s;
+      line-height: 40px;
+      width: 0;
+      color: $primary-color;
+    }
+    &:hover > .search_txt {
+      width: 240px;
+      padding: 0 6px;
+    }
+    &:hover > .search_btn {
+      background: $primary-color;
+    }
+  }
+  ::placeholder {
+    color: $primary-color;
+  }
+}

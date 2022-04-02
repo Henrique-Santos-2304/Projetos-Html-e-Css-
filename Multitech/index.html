@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multitech</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="container-fluid fixed-top">
+      <div class="container justify-content-center align-items-center"></div>
+      <nav class="d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <div class="logo d-flex justify-content-between align-items-center">
+          <a href="#">
+            <h1 class="h1">Multi<span class="h2">Tech</span></h1>
+          </a>
+        </div>
+
+        <!-- Menu Toogle -->
+        <div
+          class="
+            d-flex
+            flex-column
+            justify-content-center
+            align-items-center
+            d-lg-none
+          "
+          onclick="showMenuMobile()"
+          id="toogle"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- Estilo menu navegação Desktop -->
+        <ul
+          class="
+            list-unstyled
+            d-none d-lg-flex d-flex
+            justify-content-center
+            align-items-center
+          "
+          id="menu"
+        >
+          <li><a href="#">Home</a></li>
+          <li><a href="#smartphone">Celular/tablet</a></li>
+          <li><a href="#notebooks">Notebook/Desktop</a></li>
+          <li><a href="#acessorios">Acessórios</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Estilo Menu de Navegação Mobile -->
+    <ul
+      class="
+        list-unstyled
+        d-flex d-none
+        flex-column
+        d-lg-none
+        justify-content-center
+        align-items-center
+      "
+      id="menu-mobile"
+    >
+      <li><a href="#">Home</a></li>
+      <li><a href="#smartphone">Celular / Tablet</a></li>
+      <li><a href="#notebooks">Notebook / Desktop</a></li>
+      <li><a href="#acessorios">Acessórios</a></li>
+    </ul>
+
+    <!-- Pagina Principal -->
+    <main
+      class="
+        container
+        d-flex
+        flex-column
+        justify-content-center
+        align-items-center
+      "
+    >
+      <ul
+        class="list-unstyled d-flex justify-content-center align-items-center"
+      >
+        <li>
+          <a href="#smartphone">
+            <img
+              src="./assets/img/smartphone.jpg"
+              alt="Celular"
+              class="img-fluid"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#smartphone">
+            <img src="./assets/img/tablet.jpg" alt="Tablet" class="img-fluid" />
+          </a>
+        </li>
+        <li>
+          <a href="#notebooks">
+            <img
+              src="./assets/img/pcgamer.jpg"
+              alt="PcGamer"
+              class="img-fluid"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#notebooks">
+            <img
+              src="./assets/img/notebooks.webp"
+              alt="Notebook"
+              class="img-fluid"
+            />
+          </a>
+        </li>
+      </ul>
+      <div class="description">
+        <p class="text-center">
+          Instalação, Manutenção, Reparos em Notebooks, Desktops, Celulares e
+          Tablets
+        </p>
+        <button>Faça um Orçamento</button>
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer
+      class="
+        container-fluid
+        d-flex
+        justify-content-between
+        align-items-center
+        fixed-bottom
+        px-4
+      "
+    >
+      <div class="d-flex">
+        <!-- Icones de redirecionamento para links externos -->
+        <ul
+          class="
+            list-unstyled
+            d-flex
+            justify-content-center
+            align-items-center
+            m-0
+          "
+        >
+          <li>
+            <a href="https://www.youtube.com/channel/UCVMPoawMLxgpTyHhko8kjSQ"
+              ><i class="bi bi-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://web.whatsapp.com"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+          </li>
+          <li>
+            <a href="http://www.instagram.com"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <address class="m-0 adress">Rua: Santa Ifigênia, 185</address>
+    </footer>
+
+    <!-- Seção Smartphones e Tablets -->
+    <section class="container-fluid" id="smartphone">
+      <div class="container sections">
+        <div
+          class="
+            d-flex
+            flex-column flex-md-row
+            justify-content-center
+            align-items-center
+            sectionContainer
+          "
+        >
+          <div class="d-flex flex-column align-items-center">
+            <img
+              src="./assets/img/cel/consert.jpg"
+              alt="Software Brick"
+              class="img-fluid p-2"
+            />
+            <p class="text-center px-md-4">
+              Tela Quebrada, trincada, bateria Viciada, Celular molhou, Celular
+              não carrega, audio não funciona, Celular travando, não inicia,
+              Somos referência em qualidade, comprometimento e muito
+              profissionalismo
+            </p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <img
+              src="./assets/img/cel/tablet.jpeg"
+              alt="Software Brick"
+              class="img-fluid p-1"
+            />
+            <p class="text-center px-md-4">
+              Seu Tablet ta lento, trincou a tela, não carrega, molhou, Precisa
+              de um teclado, um mouse, transforme ele em Computador Portátil,
+              temos as soluções mais viavéis do mercado
+            </p>
+          </div>
+        </div>
+        <p class="text-center">
+          Emprestamos um celular enquanto consertamos o seu.
+        </p>
+      </div>
+    </section>
+    <!-- Seção de Notebooks e desktops -->
+    <section class="container-fluid" id="notebooks">
+      <div class="container sections">
+        <div
+          class="
+            d-flex
+            flex-column flex-md-row
+            justify-content-between
+            align-items-center
+            sectionContainer
+          "
+        >
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              src="./assets/img/desktop/conserto-de-notebook-em-bh.jpg"
+              alt="Software Brick"
+              class="img-fluid p-2"
+            />
+            <p class="text-center px-md-4">
+              Conserto de Notebook, fontes, Instalação Windows, Otimização de
+              software, Upgrade de Dispositivo, Vendas de Acessorios, Capas,
+              Skins de Notebook
+            </p>
+          </div>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              src="./assets/img/desktop/pc-gamer.jpg"
+              alt="Software Brick"
+              class="img-fluid p-2"
+            />
+            <p class="text-center px-4">
+              Montagem e manutenção de desktops para trabalho, uso social e
+              Games,Montagem conforme necessidade e condições do cliente, Venha
+              Realizar seu sonho de ter um Pc para Jogos, Trabalho e usos
+              diários
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seção de Acessorios -->
+    <section class="container-fluid" id="acessorios">
+      <div class="container sections">
+        <div
+          class="
+            d-flex
+            flex-column flex-md-row
+            justify-content-between
+            align-items-center
+            sectionContainer
+          "
+        >
+          <div
+            class="
+              d-flex
+              flex-column
+              justify-content-center
+              align-items-center
+              mx-auto
+            "
+          >
+            <img
+              src="./assets/img/acessorios/acessorios.jpeg"
+              alt="Acessórios"
+              class="img-fluid p-2"
+            />
+            <p class="text-center px-md-5 my-2">
+              Visite nossa Loja e encontre o que você procura para seu Celular,
+              Tablet, Notebook, Desktop,<br />
+              com um preço de fazer a diferença, <br />
+              <br />
+              venha ser cliente Multitech e poder usufluir do que há de mais
+              barato e de maior qualidade
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>

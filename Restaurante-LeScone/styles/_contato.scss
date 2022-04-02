@@ -1,0 +1,29 @@
+.contato-containner {
+  margin-top: 50px;
+  @include screen-flex(column);
+  h2 {
+    @include text-size(maximum);
+    margin: 60px 0px 20px 0px;
+  }
+  form {
+    @include screen-flex(column);
+    p {
+      align-self: start;
+      text-align: start;
+      margin: 5px 20px;
+      @include text-size(medium);
+    }
+
+    input {
+      width: 350px;
+      height: 50px;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    #msg {
+      height: 120px;
+      margin: 20px;
+    }
+  }
+}

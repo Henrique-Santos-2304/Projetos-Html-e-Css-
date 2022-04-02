@@ -1,0 +1,56 @@
+//Variaveis de cores
+$primary-color: #cbc6b9;
+$secondary-color: #edece4;
+$color-border: #111;
+$text-color1: #2a2426;
+
+//Variaveis de propriedades display
+$columns: 12;
+$gutter: 20px;
+$desktop: 1200px;
+$tablet: 768px;
+$mobile: 600px;
+
+//Mixins responsivos
+@mixin dispositivo($size) {
+  @if $size == desktop {
+    @media screen and (min-width: #{$desktop}) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+      @content;
+    }
+  } @else if $size == mobile {
+    @media screen and (max-width: $mobile) {
+      @content;
+    }
+  }
+}
+
+@mixin screen-flex($display: row, $justify: center) {
+  display: flex;
+  flex-direction: $display;
+  justify-content: $justify;
+  align-items: center;
+}
+
+//mixins amanho de fonte
+@mixin text-size($size) {
+  @if $size == minimum {
+    font-size: 1rem;
+    font-family: Poppins, sans-serif;
+    font-style: italic;
+    line-height: 26px;
+  } @else if $size == medium {
+    font-size: 1.2rem;
+    font-family: Poppins, sans-serif;
+    font-style: italic;
+    line-height: 32px;
+  } @else if $size == maximum {
+    font-size: 1.625rem;
+    font-family: Poppins, sans-serif;
+    font-style: italic;
+    line-height: 28px;
+  }
+}

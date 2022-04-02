@@ -1,0 +1,31 @@
+main {
+  height: 100vh;
+
+  // Lista com as Imagens que também redirecionam para suas respectivas seções
+  ul {
+    max-width: 60vw;
+  }
+  .description {
+    max-width: 60vw;
+    p {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+    // Botão de Pedido de orçamento
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 25px;
+      border-radius: 13px;
+      background-color: $fill-color;
+      color: $primary-color;
+      font-weight: 700;
+
+      &:hover {
+        font-size: 1.4rem;
+        transition: 0.3s;
+        box-shadow: 0 0 20px $effect-color;
+      }
+    }
+  }
+}

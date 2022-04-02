@@ -1,0 +1,45 @@
+.cardapio-containner {
+  margin-top: 50px;
+  @include screen-flex(column);
+
+  h2 {
+    margin-top: 70px;
+    @include text-size(maximum);
+    font-size: 1.9rem;
+  }
+  h4 {
+    @include text-size(medium);
+    padding: 30px;
+  }
+  div {
+    @include screen-flex();
+    ul {
+      @media screen and (max-width: 500px) {
+        margin: 20px 0;
+        order: 2;
+      }
+      list-style-type: none;
+      li {
+        padding-bottom: 6px;
+        @include text-size(minimum);
+      }
+    }
+
+    img {
+      margin-left: 70px;
+      height: 200px;
+      width: 200px;
+      border: solid 4px #111;
+      border-radius: 50%;
+      box-shadow: 0 0 0 10px #fff;
+      @media screen and (max-width: 500px) {
+        margin: 20px 0;
+        margin-left: 0;
+        order: 1;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      @include screen-flex(column);
+    }
+  }
+}

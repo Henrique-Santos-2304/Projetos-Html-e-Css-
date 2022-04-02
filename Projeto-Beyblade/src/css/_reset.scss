@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: $font-primary;
+}
+body,
+.home {
+  @include d-flex;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("../img/Gif/beyblade.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home {
+  flex-direction: column;
+}

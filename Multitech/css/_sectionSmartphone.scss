@@ -1,0 +1,39 @@
+section {
+  padding-top: 16vh;
+  background-color: $effect-color2;
+
+  // Container das seções
+  .sections {
+    // Seções Responsivas
+    @media (max-width: 500px) {
+      height: 160vh;
+    }
+    // Seções no geral
+    border-bottom: 1px solid $primary-color;
+    height: 100vh;
+    background-color: $effect-color2;
+    margin: 0 auto;
+    p {
+      color: white;
+      padding: 12px 0;
+      letter-spacing: 2px;
+      font-size: 1.1rem;
+      font-weight: 900;
+      text-transform: capitalize;
+    }
+
+    // Cada mini container com seus conteudos de imagens e paragrafos
+    .sectionContainer {
+      div {
+        img {
+          width: 210px;
+          height: 180px;
+          margin: 20px 0;
+          box-shadow: 0 0 20px $primary-color;
+          border: 5px solid $fill-color;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

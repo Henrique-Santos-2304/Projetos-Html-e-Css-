@@ -1,0 +1,31 @@
+header {
+  position: fixed;
+  align-self: center;
+  max-width: 100%;
+  margin: 8px 0px 10px 15px;
+
+  div {
+    ul {
+      list-style-type: none;
+      text-transform: uppercase;
+      padding: 10px;
+      @include screen-flex;
+      a {
+        margin: 0 10px;
+        color: $text-color1;
+        text-decoration: none;
+        cursor: pointer;
+        @include text-size(maximum);
+
+        @include dispositivo(mobile) {
+          font-size: 1.2rem;
+        }
+
+        &:hover {
+          font-size: 2.1rem;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.buttonSend {
+  margin: 0;
+  justify-self: center;
+  align-self: center;
+  button {
+    all: unset;
+    padding: 7px 20px;
+    border-radius: 13px;
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-size: 1.3rem;
+    cursor: pointer;
+    &:hover {
+      font-size: 1.6rem;
+      transition: all 0.3s;
+      border: 1px solid $secondary-color;
+    }
+  }
+}

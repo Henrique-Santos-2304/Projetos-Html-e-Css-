@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #f8f8f8;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+header {
+  width: 100vw;
+  background-color: #f37520;
+  h1 {
+    font-family: MonteCarlo, serif;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    color: #f8f8f8;
+    @media screen and (max-width: 575px) {
+      font-size: 1.3rem;
+    }
+  }
+  ul {
+    margin-top: 10px;
+    li {
+      text-decoration: none;
+      margin: 0px 20px;
+      font-size: 1.3rem;
+      color: #f8f8f8;
+      cursor: pointer;
+
+      @media screen and (max-width: 575px) {
+        font-size: 0.8rem;
+        margin: 0px 8px;
+      }
+    }
+  }
+}

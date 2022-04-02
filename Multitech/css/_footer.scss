@@ -1,0 +1,42 @@
+footer {
+  height: 45px;
+  background-color: transparent;
+
+  // Estilização dos Icones de redes Sociais
+  div {
+    ul {
+      li {
+        a {
+          padding: 0 4px;
+          .bi-whatsapp,
+          .bi-instagram,
+          .bi-youtube {
+            font-size: 1.3rem;
+            @media screen and(min-width: 500px) {
+              font-size: 1.4rem;
+              padding: 0 10px;
+            }
+          }
+          .bi-whatsapp {
+            color: #00e676;
+          }
+          .bi-instagram {
+            color: #9e30bc;
+          }
+          .bi-youtube {
+            color: $effect-color;
+          }
+        }
+      }
+    }
+  }
+
+  // Estilização do Adrees de Endereço
+  .adress {
+    font-family: sans-serif !important;
+    color: $secondary-color;
+    text-shadow: 0 0 6px $primary-color;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  font-family: $font-geral;
+  font-size: 22px;
+  line-height: 1.3;
+  scroll-behavior: smooth;
+}

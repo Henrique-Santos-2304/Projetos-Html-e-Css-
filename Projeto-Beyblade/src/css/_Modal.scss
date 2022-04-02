@@ -1,0 +1,73 @@
+.Modal {
+  height: 500px;
+  width: 72vw;
+  position: relative;
+  background-color: transparent;
+  border-radius: 22px;
+  z-index: 1000;
+  .superX {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+
+    img {
+      background-color: $effect-color;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+
+      &:hover {
+        width: 40px;
+        height: 40px;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+    }
+  }
+  h3 {
+    margin: 0 20px;
+    width: max-content;
+    padding: 10px 30px;
+    text-align: center;
+    background-color: $effect-color;
+    border-radius: 16px;
+
+    color: $primary-color;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  .image {
+    animation: 0.8s linear 1s infinite alternate go-back;
+    position: absolute;
+    bottom: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    background-image: none;
+    #blade {
+      background-image: none;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      animation: App-logo-spin infinite 0.1s ease-out;
+      box-shadow: 0 0 300px $effect-color;
+    }
+  }
+}
+@keyframes go-back {
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(900px);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

@@ -1,0 +1,10 @@
+footer {
+  width: 100vw;
+  height: 50px;
+  @include screen-flex();
+  background-color: #201e1e;
+  h3 {
+    @include text-size(maximum);
+    color: #fff;
+  }
+}

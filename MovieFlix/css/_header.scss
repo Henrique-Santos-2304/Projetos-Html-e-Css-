@@ -1,0 +1,88 @@
+header {
+  // Background do projeto em Video
+  .bg_video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1000;
+    // background-size: cover;
+
+    @media screen and (max-width: 1025px) {
+      background-color: black;
+    }
+  }
+
+  // background-color: $primary-color;s
+  nav {
+    // Botão Haburguer do responsivo
+    .navbar-toggler {
+      // Mobile responsivo
+      .mobile {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border: solid 2px aliceblue;
+        padding: 4px 2px;
+        // Desenho do hambuurguer responsivo
+        div {
+          width: 16px;
+          height: 2px;
+          margin: 3px;
+          background-color: aliceblue;
+        }
+      }
+    }
+
+    // Desenho do Logo
+    #logo {
+      @include logo-img;
+    }
+
+    // Estilo das listas de navegação
+    #navbarNav {
+      li {
+        a {
+          color: $primary-color;
+          font-size: 1.2rem;
+          margin: 0px 4px;
+
+          &:hover {
+            text-shadow: 0 0 20px $border-logo;
+            font-size: 1.6rem;
+          }
+
+          // Menu navegação no Responsivo
+          @media screen and(max-width: 500px) {
+            background-color: $primary-color;
+            color: $secondary-color !important;
+            margin: 10px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 13px $border-logo;
+          }
+        }
+      }
+    }
+  }
+}
+
+#descicaoVideo {
+  margin-top: 60px;
+  font-family: cursive, serif;
+  h4,
+  p {
+    margin-bottom: 10px !important;
+  }
+  button {
+    padding: 2px 10px !important;
+    border-radius: 30px !important;
+    // transition: 0.3s;
+    &:hover {
+      background-color: transparent;
+      padding: 10px !important;
+      border: 2px solid $primary-color;
+    }
+  }
+}

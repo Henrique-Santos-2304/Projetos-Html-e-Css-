@@ -1,0 +1,59 @@
+section {
+  // Margin por seções
+  margin-top: 100vh !important;
+  // Seções no Responsivo
+  @media (max-width: 500px) {
+    width: 100vw;
+  }
+  .slide {
+    a {
+      text-decoration: none !important;
+      .card {
+        background-color: transparent;
+        border-radius: 20px !important;
+        img {
+          height: 220px !important;
+          width: 360px !important;
+          box-shadow: 0 0 14px $primary-color;
+          transition: 0.7s;
+          border-radius: 20px;
+
+          &:hover {
+            height: 360px !important;
+            width: 500px !important;
+            transition: 0.7s;
+          }
+          // Responsividade das imagens
+          @media (max-width: 500px) {
+            height: 100px !important;
+            width: 150px !important;
+          }
+        }
+        .card-body {
+          h5,
+          p {
+            margin-bottom: 0;
+            border-bottom: 0;
+          }
+          h5 {
+            font-size: 1.2rem;
+          }
+          p {
+            font-size: 1rem;
+            font-weight: 200 !important;
+          }
+          // Responsividade dos textos no card das imagens de seções
+          @media (max-width: 500px) {
+            h5,
+            p {
+              font-size: 20px;
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// background-color: #111;

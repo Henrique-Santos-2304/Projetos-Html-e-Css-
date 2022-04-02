@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+:root {
+  --blue-light: #1fbad6;
+  --blue-force: #09091a;
+  --green-light: #21c016;
+}
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+}
+
+/* Elementos com Display-Flex */
+body,
+.container,
+.velha-img div,
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--blue-force);
+}
+
+/* Estilização do Container geral e tela de Usúario */
+.container,
+.login {
+  width: 600px;
+  height: 600px;
+  box-shadow: 10px 10px 40px #2e4477;
+  background-color: var(--blue-force);
+  border-radius: 50%;
+}
+
+/* Tamanho do tabuleiro jogo  */
+.container .velha-img {
+  width: 65%;
+  height: 58%;
+}
+
+/* Estilização do Jogo da velha Totalmente Feito em Css e Html */
+.velha-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-bottom: 10px;
+}
+
+/* Estilização do Jogo da velha Totalmente Feito em Css e Html */
+#a1,
+#a2,
+#b1,
+#b2,
+#c1,
+#c2 {
+  border-right: solid 3px var(--green-light);
+}
+#a1,
+#a2,
+#a3,
+#b1,
+#b2,
+#b3 {
+  border-bottom: solid 3px var(--green-light);
+}
+
+#a1 {
+  border-top-left-radius: 45px;
+}
+#a3 {
+  border-top-right-radius: 45px;
+}
+#c1 {
+  border-bottom-left-radius: 45px;
+}
+#c3 {
+  border-bottom-right-radius: 45px;
+}
+
+.velha-img div {
+  box-shadow: 5px 5px 30px var(--blue-light);
+}
+
+/* Estilizaçãodas imagens que serã mostradas */
+.velha-img div .bolinha,
+.velha-img div img {
+  width: 60%;
+  height: 60%;
+  border: solid 4px var(--green-light);
+  border-radius: 50%;
+  margin: 10px;
+}
+
+/* Estilização dos textos de Jogador */
+#j1,
+#j2 {
+  text-transform: capitalize;
+  width: 70%;
+  height: 35px;
+  outline: 0px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+/* Estilização do Botão iniciar jogo */
+#bt-01 {
+  width: 90px;
+  padding: 10px;
+  text-decoration: none;
+  background-color: var(--blue-force);
+  color: var(--blue-light);
+  border-radius: 15px;
+  font-size: 0.8rem;
+  box-shadow: 5px 5px 20px var(--blue-light);
+}
+#bt-01:hover {
+  cursor: pointer;
+  background-color: var(--green-light);
+  color: white;
+}
+
+/* Textos de mensagens de erro, login, vitória no geral */
+h1 {
+  height: 10vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--blue-light);
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}

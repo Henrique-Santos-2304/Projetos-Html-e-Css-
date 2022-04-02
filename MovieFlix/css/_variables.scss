@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
+$primary-color: #dff9fb;
+$secondary-color: #111;
+$border-logo: #e71336;
+
+$font-logo: "Rampart One", cursive;
+$font-geral: "Hina Mincho", serif;
+
+// Mixins
+@mixin logo-img {
+  a {
+    color: $primary-color !important;
+    font-family: $font-logo;
+    font-size: 1.4rem;
+    border-bottom: 1px solid $border-logo;
+    span {
+      color: $border-logo !important;
+    }
+  }
+}

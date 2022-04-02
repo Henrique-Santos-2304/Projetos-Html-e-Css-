@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1>Pizzaria</h1>
+        <nav>
+          <ul class="list-inline">
+            <li class="list-inline-item">Menu</li>
+            <li class="list-inline-item">Home</li>
+            <li class="list-inline-item">Contato</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <div class="row">
+        <section class="col-sm-3" id="menu-lateral">
+          <nav>
+            <ul class="list-unstyled">
+              <li>Home</li>
+              <li>Cardapio</li>
+              <li>Pizzas Tradicionais</li>
+              <li>Pizzas Nobres</li>
+              <li>Pizzas Doces</li>
+              <li>Promoções</li>
+              <li>Pedido Online</li>
+              <li class="mb-4">Contato</li>
+            </ul>
+          </nav>
+        </section>
+        <section class="col-sm-7">
+          <h1>Pizzaria Toda Hora</h1>
+          <p class="">
+            Lorem <strong class="text-black">ipsum</strong> dolor sit amet
+            consectetur adipisicing elit. Veniam illo sequi mollitia, animi
+            molestias ullam <del class="text-danger">laudantium</del>, minus
+            hic, nobis odio quae? Odit porro adipisci facilis accusamus laborum
+            est libero vel.
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer class="container-fluid">
+      <div class="d-flex justify-content-around align-items-center">
+        <div class="mt-4">
+          <p class="h3">Links</p>
+          <nav>
+            <ul class="list-unstyled">
+              <li>Home</li>
+              <li>Cardapio</li>
+              <li>Contato</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mt-4">
+          <p class="h3">Pizzas</p>
+          <nav>
+            <ul class="list-unstyled">
+              <li>Tradicionais</li>
+              <li>Nobres</li>
+              <li>Doces</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <footer>Pizzaria.com.br</footer>
+    </footer>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
